@@ -6,15 +6,15 @@
 
 This is a static site: no dependencies or build step are required. All assets use relative paths so the site works under `/personal-website/`. `.nojekyll` tells Pages to serve the files directly.
 
-Repository: https://github.com/farfallawang/personal-website
+Repository: https://github.com/mengdie-flora-wang/personal-website
 
-Expected site URL after publishing: https://farfallawang.github.io/personal-website/
+Expected site URL after publishing: https://mengdie-flora-wang.github.io/personal-website/
 
 The prepared repository preserves the bundle history and includes the newer wording from the supplied plain-files folder.
 
 ### Publish
 
-1. Sign in to GitHub as an account with write access to `farfallawang/personal-website`.
+1. Sign in to GitHub as an account with write access to `mengdie-flora-wang/personal-website`.
 2. From this directory, push `main`:
 
    ```sh
@@ -27,7 +27,7 @@ The prepared repository preserves the bundle history and includes the newer word
 If using GitHub CLI, run `gh auth login` and `gh auth setup-git` before pushing. After the push, Pages can instead be enabled with:
 
 ```sh
-gh api --method POST repos/farfallawang/personal-website/pages \
+gh api --method POST repos/mengdie-flora-wang/personal-website/pages \
   -f 'source[branch]=main' -f 'source[path]=/'
 ```
 

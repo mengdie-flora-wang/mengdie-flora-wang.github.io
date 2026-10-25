@@ -5,7 +5,8 @@
    ============================================================ */
 
 :root {
-  --bg: #f7f8fa;
+  color-scheme: light;
+  --bg: #ffffff;
   --surface: #ffffff;
   --surface-2: #eef1f6;
   --text: #16181d;
@@ -28,30 +29,6 @@
   --maxw: 1040px;
   --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-display: "Space Grotesk", "Inter", system-ui, sans-serif;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #0e1016;
-    --surface: #161922;
-    --surface-2: #1b1f2b;
-    --text: #eef1f6;
-    --text-soft: #c4cad6;
-    --text-muted: #8a909e;
-    --accent: #8b83ff;
-    --accent-2: #a78bfa;
-    --accent-soft: #211d3d;
-    --award: #fbbf24;
-    --award-soft: #3a2d12;
-    --talk: #5eead4;
-    --talk-soft: #10302c;
-    --blog: #f0a6cf;
-    --blog-soft: #3a1228;
-    --border: #262b38;
-    --rail: #2d3342;
-    --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 10px 30px rgba(0, 0, 0, 0.45);
-    --shadow-hover: 0 4px 10px rgba(139, 131, 255, 0.18), 0 16px 40px rgba(0, 0, 0, 0.5);
-  }
 }
 
 * { box-sizing: border-box; }
