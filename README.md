@@ -1,34 +1,17 @@
-# website-v6-polished — polished copy variant of the v5-refined timeline design
+# Mengdie (Flora) Wang — personal website
 
-**Concept:** Light editorial "academic CV meets modern magazine" — experience and publications on a vertical timeline rail with year markers; Space Grotesk display + Inter body, indigo accent. Preview: open `index.html` via `file://` or `python3 -m http.server 8000 --bind 127.0.0.1`. Deploy: static files to any host (S3+CloudFront, GitHub Pages, Netlify).
+Live site: https://mengdie-flora-wang.github.io/
 
-## GitHub Pages
+Repository: https://github.com/mengdie-flora-wang/mengdie-flora-wang.github.io
 
-This is a static site: no dependencies or build step are required. All assets use relative paths so the site works under `/personal-website/`. `.nojekyll` tells Pages to serve the files directly.
+Static HTML, CSS, and JavaScript; no dependencies or build step required. The white theme remains light regardless of device appearance. All assets use relative paths. `.nojekyll` serves the files directly.
 
-Repository: https://github.com/mengdie-flora-wang/personal-website
+## Preview
 
-Expected site URL after publishing: https://mengdie-flora-wang.github.io/personal-website/
+Open `index.html` or run `python3 -m http.server 8000 --bind 127.0.0.1`.
 
-The prepared repository preserves the bundle history and includes the newer wording from the supplied plain-files folder.
+## Publish
 
-### Publish
+GitHub Pages publishes automatically from `main`, `/ (root)`, using Deploy from a branch in Settings → Pages. Push future updates to this repository. The repository name must match `mengdie-flora-wang.github.io` to serve the account root.
 
-1. Sign in to GitHub as an account with write access to `mengdie-flora-wang/personal-website`.
-2. From this directory, push `main`:
-
-   ```sh
-   git push -u origin main
-   ```
-
-3. In the repository's **Settings → Pages**, select **Deploy from a branch**, then **main** and **/ (root)**, and save.
-4. Wait for the Pages deployment to finish, then visit the expected site URL above.
-
-If using GitHub CLI, run `gh auth login` and `gh auth setup-git` before pushing. After the push, Pages can instead be enabled with:
-
-```sh
-gh api --method POST repos/mengdie-flora-wang/personal-website/pages \
-  -f 'source[branch]=main' -f 'source[path]=/'
-```
-
-For a repository where Pages is already enabled, use `--method PUT` to update its source. Future pushes to `main` publish automatically. Do not bypass any installed push approval hooks; obtain their required approval if a push is blocked.
+The former `/personal-website/` project site has been retired. The original Git bundle history remains in the local prepared copy.
