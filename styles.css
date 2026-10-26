@@ -379,3 +379,28 @@ a:hover { text-decoration: underline; }
   }
   .tl-marker { left: 0; top: 2px; }
 }
+
+/* Research portfolio preview */
+.hero { padding: 76px 0 42px; }
+.hero__tagline { font-family: var(--font-display); font-size: clamp(1.4rem, 2.6vw, 1.9rem); line-height: 1.3; max-width: 35ch; }
+.hero__intro { margin-bottom: 16px; }
+.hero__links { margin: 24px 0 12px; }
+.section-kicker { text-transform: uppercase; letter-spacing: .1em; color: var(--accent); font-size: .76rem; font-weight: 700; margin: 0 0 9px; }
+.research-interest { color: var(--text-soft); max-width: 76ch; margin: 28px 0 0; }
+.research-stack { display: grid; gap: 18px; }
+.research-stack .tl-card { margin: 0; padding: 28px 30px; }
+.research-stack .tl-title { font-size: 1.45rem; }
+.research-question { color: var(--text); font-weight: 500; margin: 10px 0; }
+.research-method { color: var(--text-soft); font-size: .88rem; margin: 16px 0 12px; }
+.resource-links { display: flex; gap: 24px; }
+.text-link { font-size: .9rem; font-weight: 600; }
+.engineering-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.engineering-grid .impact-card p + p { margin-top: 14px; }
+.talks-two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 30px; }
+@media (max-width: 860px) { .engineering-grid { grid-template-columns: 1fr; } }
+@media (max-width: 680px) { .talks-two-col { grid-template-columns: 1fr; gap: 24px; } .research-stack .tl-card { padding: 22px; } .nav__menu a { padding: 12px 28px; } }
+@media (max-width: 560px) {
+  .contact-list li { grid-template-columns: 1fr; gap: 3px; }
+  .contact-list a { overflow-wrap: anywhere; }
+  .site-footer .container { flex-wrap: wrap; gap: 12px; }
+}
